@@ -1,0 +1,3 @@
+[console_scripts]
+behavior_node = turtlebot3_behavior_pkg.behavior_node:main
+
