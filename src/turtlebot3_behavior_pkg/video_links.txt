@@ -6,3 +6,4 @@ Autonomous Behavior Video
 This video shows the autonomous behavior of the robot, as well as the sensor input in console, and the sensor input in rviz
 https://drive.google.com/file/d/1jkWZUW1afRIvNj4nR_PJdsp9MxInm9BA/view?usp=sharing 
 
+The pdf was submitted seperatly.

@@ -1,39 +1,62 @@
+# TurtleBot3 Behavior Package
 
-Open Terminal and source the following files, use your own filepath if you have stored them somewhere else
-If you don't have them, make sure to install them.
-# Navigate to ros2_ws then perform the following commands
-cd ros2_ws
+This README provides instructions for setting up and running the TurtleBot3 behavior package using ROS2.
 
-# For ROS2, TurtleBot3, and PKG ros2_ws
-source /opt/ros/humble/setup.bash
-source ~/turtlebot3_ws/install/setup.bash
-source install/setup.bash
+## Prerequisites
 
-# Change the filepaths if any of these differ 
+Make sure you have installed ROS2 and the TurtleBot3 packages. If you haven't, please install them before proceeding.
 
-# Run
+## Setup Instructions
+
+1. **Open terminal** and install this package into ros2_ws/src, or if you clone this repo clone it into a folder named ros2_ws
+    ```bash
+    git clone https://github.com/MatthewDulcich/ROS2_Turtlebot_Behavior.git
+    ```
+
+2. **Run commands** and source the following files. Adjust the file paths if you've stored them elsewhere:
+
+    ```bash
+    source /opt/ros/humble/setup.bash
+    source ~/turtlebot3_ws/install/setup.bash
+    source ~/ros2_ws/install/setup.bash
+    ```
+
+3. **Navigate to your workspace**:
+
+    ```bash
+    cd ros2_ws
+    ```
+
+4. Ensure the package is located in the `ros2_ws/src` directory. If you cloned the repository, the main folder should be `ros2_ws`.
+
+## Building the Package
+
+Build the package using:
+
+```bash
 colcon build
+```
 
-# Teleoperation with keyboard
-# Launch the following in different terminals make sure to source humble and turtlebot3 and ros2_ws
-# Launch the turtlebot gazebo
+# Teleoperation with Keyboard
+
+To control the TurtleBot using the keyboard, follow these steps. Make sure to launch the commands in different terminals and source the necessary setups for ROS2, TurtleBot3, and your workspace.
+
+```bash
+# Step 1: Launch the TurtleBot in Gazebo
 ros2 launch turtlebot3_behavior_pkg teleop_launch.py
 
-Then
-
-# Launch the keyboard
+# Step 2: Launch the Keyboard Teleoperation
 ros2 launch turtlebot3_behavior_pkg teleop_node.py
-# OR: If the command above doesen't work open a new terminal source ROS2 and TurtleBot3 and run the command below
+
+# Alternative Method: If the command above doesn't work, open a new terminal, 
+# source ROS2 and TurtleBot3 again, and run:
 ros2 run turtlebot3_teleop teleop_keyboard
+```
 
-OR
+# Movement Based on Programmed Behavior
 
-# Movement based on programmed behavior
+To launch the turtlebot with autonomous behavior, follow these steps. Make sure to launch the commands in terminals properly sourced with the commands for ROS2, TurtleBot3, and your workspace.
+
+```bash
 ros2 launch turtlebot3_behavior_pkg behavior_launch.py
-
-
-
-
-# Other commands
-# Launching rviz for making the config file
-ros2 run rviz2 rviz2
+```
