@@ -1,0 +1,8 @@
+Teleoperation Video and Console Output
+This video shows the teleoperation of the robot using the keyboard
+https://drive.google.com/file/d/17G94rrAmCD9vHcdYLP__xb8w2UVQ-B4D/view?usp=drive_link 
+
+Autonomous Behavior Video 
+This video shows the autonomous behavior of the robot, as well as the sensor input in console, and the sensor input in rviz
+https://drive.google.com/file/d/1jkWZUW1afRIvNj4nR_PJdsp9MxInm9BA/view?usp=sharing 
+
