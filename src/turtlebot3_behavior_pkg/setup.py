@@ -20,8 +20,8 @@ setup(
     zip_safe=True,
     maintainer='mrdulcich',
     maintainer_email='emailhiddenforgithubpush',
-    description='TODO: Package description',
-    license='TODO: License declaration',
+    description='simple braitenberg vehicle behavior for turtlebot3',
+    license='UNLICENSE',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
